@@ -1,0 +1,120 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+ul {
+    display: flex;
+}
+ul  li{
+    list-style: none;   
+    padding: 0 18px;
+    font-size: 13px;
+}
+ul li a{
+    color: white;
+    text-decoration:none;
+}
+ul>li>a:hover{
+    color: rgb(107, 115, 130);
+
+
+}
+main{
+    min-height: 90vh;
+    padding: 2px;
+}
+.logo span{
+    font-size: 20px;
+}
+.logo img{
+    width: 18px;
+    height: 17px;
+    filter: invert(1);
+}
+.container{
+  
+    max-width: 80vh;
+    margin: auto;
+    padding: 15px;
+}
+.container h1{
+    padding: 12px;
+}
+
+.submit-button {
+    background-color: black; /* Default background color */
+    color: white; /* Default text color */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border: none; /* Remove the default input border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 20px;
+}
+
+.submit-button:hover {
+    background-color: rgb(107, 115, 130); /* Change background color on hover */
+}
+
+#resultcont div::first-letter{
+    text-transform: uppercase;
+}
+/* Add these styles to your CSS */
+.container h2 {
+    font-size: 24px; /* Increase the font size */
+    margin-top: 20px; /* Add some margin for separation */
+}
+input[type='text']{
+    min-width: 240px;
+    padding: 3px 12px;
+    border-radius: 5px;
+}
+#resultcont {
+    background-color: #f0f0f0; /* Add a light gray background color */
+    padding: 20px; /* Add padding to the result container */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a slight box shadow */
+    margin-top: 10px; /* Add margin for separation */
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+@media only  screen and (max-width:600px){
+    body{
+        background-color: rgb(118, 106, 224);
+
+    }
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+       
+    }
+    .logo img{
+        width: 25px;
+        height: 25px;
+        filter: invert(1);
+    }
+}
